@@ -9,6 +9,10 @@ namespace DogGo.Repositories
     public interface IOwnerRepository
     {
         List<Owner> GetAllOwners();
-        OwnerRepository GetOwnerById(int id);
+        Owner GetOwnerById(int id);
+        
+        void AddOwner(Owner owner);
+        void UpdateOwner(Owner owner);
+        void DeleteOwner(int id);
     }
 }
