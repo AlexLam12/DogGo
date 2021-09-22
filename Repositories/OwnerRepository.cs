@@ -35,7 +35,7 @@ namespace DogGo.Repositories
                 using (SqlCommand cmd = conn.CreateCommand())
                 {
                     cmd.CommandText = @"SELECT Id, [Name], Email, Address, NeighborhoodId, Phone 
-                                        FROM Walker
+                                        FROM Owner
                     ";
 
                     SqlDataReader reader = cmd.ExecuteReader();
